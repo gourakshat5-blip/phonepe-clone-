@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PhonePe Clone</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-badge">प</span>
+      PhonePe
+    </div>
+
+    <nav class="sidebar-nav" id="sidebarNav">
+      <a href="#" class="sidebar-link active" data-page="Home">🏠 Home</a>
+      <a href="#" class="sidebar-link" data-page="Money Transfer">➤ Money Transfer</a>
+      <a href="#" class="sidebar-link" data-page="Recharge & Bills">⚡ Recharge &amp; Bills</a>
+      <a href="#" class="sidebar-link" data-page="History">🕐 History</a>
+      <a href="#" class="sidebar-link" data-page="Offers">🎁 Offers</a>
+      <a href="#" class="sidebar-link" data-page="Settings">⚙️ Settings</a>
+    </nav>
+
+    <div class="sidebar-footer-card">
+      <div class="icon-circle">🛡️</div>
+      <h4>Safe &amp; Secure Payments</h4>
+      <p>Your data is protected with 256-bit encryption.</p>
+      <button class="arrow-btn">→</button>
+    </div>
+  </aside>
+
+  <!-- ===================== MAIN COLUMN ===================== -->
+  <div class="main-column">
+
+    <!-- ---------- TOPBAR ---------- -->
+    <header class="topbar">
+      <div class="search-box">
+        🔍
+        <input type="text" id="searchInput" placeholder="Search any contact, mobile number, biller..." />
+      </div>
+      <div class="topbar-right">
+        <div class="bell-wrap" id="bellIcon">
+          🔔
+          <span class="bell-dot" id="bellDot"></span>
+        </div>
+        <div class="profile-chip" id="profileChip">
+          <div class="avatar-fallback">A</div>
+          Akshat Gour ▾
+        </div>
+      </div>
+    </header>
+
+    <!-- ---------- PAGE BODY (2 columns) ---------- -->
+    <div class="page-body">
+
+      <!-- ===== LEFT COLUMN ===== -->
+      <div class="left-stack">
+
+        <!-- Welcome banner -->
+        <div class="welcome-banner">
+          <div>
+            <p class="greeting">Good Morning,</p>
+            <h1>Akshat 👋</h1>
+            <p>Make your life easier with PhonePe</p>
+          </div>
+          <div class="banner-art">📱</div>
+        </div>
+
+        <!-- Balance card -->
+        <div class="card balance-card">
+          <div>
+            <div class="label" id="balanceLabel">Total Balance <span id="eyeIcon" style="cursor:pointer;">👁️</span></div>
+            <div class="amount" id="balanceAmount">₹ 12,500</div>
+          </div>
+          <div class="actions">
+            <button class="btn btn-outline" id="addMoneyBtn">+ Add Money</button>
+            <button class="btn btn-primary" id="sendMoneyBtn">➤ Send Money</button>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="card">
+          <div class="section-header">
+            <h3>Quick Actions</h3>
+            <a class="see-all" href="#">See All</a>
+          </div>
+          <div class="action-grid" id="quickActionsGrid">
+            <button class="action-item" data-action="Send Money">
+              <div class="action-icon" style="background:#eef0ff;">➤</div>
+              <span>Send Money</span>
+            </button>
+            <button class="action-item" data-action="Receive Money">
+              <div class="action-icon" style="background:#e6f9ef;">⬇️</div>
+              <span>Receive Money</span>
+            </button>
+            <button class="action-item" data-action="Mobile Recharge">
+              <div class="action-icon" style="background:#e8f1ff;">📱</div>
+              <span>Mobile Recharge</span>
+            </button>
+            <button class="action-item" data-action="Electricity">
+              <div class="action-icon" style="background:#fff3e0;">⚡</div>
+              <span>Electricity</span>
+            </button>
+            <button class="action-item" data-action="DTH">
+              <div class="action-icon" style="background:#fdeaec;">📡</div>
+              <span>DTH</span>
+            </button>
+            <button class="action-item" data-action="Bill Payments">
+              <div class="action-icon" style="background:#e6f7f5;">📄</div>
+              <span>Bill Payments</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Recharge & Bill Payments -->
+        <div class="card">
+          <div class="section-header">
+            <h3>Recharge &amp; Bill Payments</h3>
+          </div>
+          <div class="action-grid" id="rechargeGrid">
+            <button class="action-item" data-action="Mobile Recharge">
+              <div class="action-icon" style="background:#f1eefb;">📱</div>
+              <span>Mobile Recharge</span>
+            </button>
+            <button class="action-item" data-action="DTH">
+              <div class="action-icon" style="background:#f1eefb;">📡</div>
+              <span>DTH</span>
+            </button>
+            <button class="action-item" data-action="Electricity">
+              <div class="action-icon" style="background:#f1eefb;">⚡</div>
+              <span>Electricity</span>
+            </button>
+            <button class="action-item" data-action="Water">
+              <div class="action-icon" style="background:#f1eefb;">💧</div>
+              <span>Water</span>
+            </button>
+            <button class="action-item" data-action="Gas">
+              <div class="action-icon" style="background:#f1eefb;">🔥</div>
+              <span>Gas</span>
+            </button>
+            <button class="action-item" data-action="Broadband">
+              <div class="action-icon" style="background:#f1eefb;">📶</div>
+              <span>Broadband</span>
+            </button>
+            <button class="action-item" data-action="Landline">
+              <div class="action-icon" style="background:#f1eefb;">☎️</div>
+              <span>Landline</span>
+            </button>
+            <button class="action-item" data-action="Insurance">
+              <div class="action-icon" style="background:#f1eefb;">🛡️</div>
+              <span>Insurance</span>
+            </button>
+            <button class="action-item" data-action="Education">
+              <div class="action-icon" style="background:#f1eefb;">🎓</div>
+              <span>Education</span>
+            </button>
+            <button class="action-item" data-action="Loan">
+              <div class="action-icon" style="background:#f1eefb;">👛</div>
+              <span>Loan</span>
+            </button>
+            <button class="action-item" data-action="FASTag">
+              <div class="action-icon" style="background:#f1eefb;">💳</div>
+              <span>FASTag</span>
+            </button>
+            <button class="action-item" data-action="More">
+              <div class="action-icon" style="background:#f1eefb;">▦</div>
+              <span>More</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Payments Made Easy -->
+        <div class="card">
+          <div class="section-header">
+            <h3>Payments Made Easy</h3>
+          </div>
+          <div class="easy-payments">
+            <div class="easy-item">
+              <div class="icon-badge">▢</div>
+              <div>
+                <div class="easy-title">Scan &amp; Pay</div>
+                <div class="easy-sub">Pay at any UPI QR</div>
+              </div>
+            </div>
+            <div class="easy-item">
+              <div class="icon-badge">📱</div>
+              <div>
+                <div class="easy-title">To Mobile</div>
+                <div class="easy-sub">Send to any number</div>
+              </div>
+            </div>
+            <div class="easy-item">
+              <div class="icon-badge">🏦</div>
+              <div>
+                <div class="easy-title">To Bank Account</div>
+                <div class="easy-sub">IMPS / NEFT / RTGS</div>
+              </div>
+            </div>
+            <div class="easy-item">
+              <div class="icon-badge">👤</div>
+              <div>
+                <div class="easy-title">Self Transfer</div>
+                <div class="easy-sub">Transfer to yourself</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== RIGHT COLUMN ===== -->
+      <div class="right-stack">
+
+        <!-- Cashback banner -->
+        <div class="cashback-banner">
+          <p>Get up to</p>
+          <h2>₹100 Cashback</h2>
+          <p>on your first UPI payment</p>
+          <button class="btn btn-primary" id="exploreOffersBtn">Explore Offers</button>
+        </div>
+
+        <!-- Recent Transactions -->
+        <div class="card">
+          <div class="section-header">
+            <h3>Recent Transactions</h3>
+            <a class="see-all" href="#">See All</a>
+          </div>
+
+          <div class="transaction-item">
+            <div class="tx-avatar" style="background:#7b6ef6;">R</div>
+            <div class="tx-info">
+              <div class="tx-name">Rahul Sharma</div>
+              <div class="tx-meta">Sent • ₹500</div>
+              <div class="tx-date">Today, 10:24 AM</div>
+            </div>
+            <div class="tx-amount debit">- ₹500</div>
+          </div>
+
+          <div class="transaction-item">
+            <div class="tx-avatar" style="background:#e6394c;">A</div>
+            <div class="tx-info">
+              <div class="tx-name">Airtel</div>
+              <div class="tx-meta">Mobile Recharge • ₹299</div>
+              <div class="tx-date">Yesterday, 8:15 PM</div>
+            </div>
+            <div class="tx-amount debit">- ₹299</div>
+          </div>
+
+          <div class="transaction-item">
+            <div class="tx-avatar" style="background:#5b5bf0;">A</div>
+            <div class="tx-info">
+              <div class="tx-name">Amit Kumar</div>
+              <div class="tx-meta">Received • ₹1,000</div>
+              <div class="tx-date">16 Sep, 6:32 PM</div>
+            </div>
+            <div class="tx-amount credit">+ ₹1,000</div>
+          </div>
+
+          <div class="transaction-item">
+            <div class="tx-avatar" style="background:#0f3d5c;">J</div>
+            <div class="tx-info">
+              <div class="tx-name">Jio</div>
+              <div class="tx-meta">Mobile Recharge • ₹199</div>
+              <div class="tx-date">15 Sep, 11:20 AM</div>
+            </div>
+            <div class="tx-amount debit">- ₹199</div>
+          </div>
+        </div>
+
+        <!-- Promo strip -->
+        <div class="promo-strip">
+          <div class="icon-badge">🛡️</div>
+          <div style="flex:1;">
+            <strong>UPI is better, safer &amp; faster with PhonePe</strong>
+            <span>Pay, transfer and do more</span>
+          </div>
+          <div>›</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Toast notification box — script.js dynamically ismein text daalta hai -->
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
